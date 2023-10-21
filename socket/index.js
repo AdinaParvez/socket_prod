@@ -1,6 +1,10 @@
 import { Server } from "socket.io";
+import dotenv from 'dotenv'
 
-const io = new Server(9000, {
+dotenv.config()
+
+const PORT = process.env.PORT || 9000
+const io = new Server(`${process.env.PORT}`, {
     cors: {
         origin: 'http://localhost:3000' || 'https://653361ecbfae0c37e94fc717--aquamarine-muffin-72bae9.netlify.app/'
     }
