@@ -6,7 +6,7 @@ dotenv.config()
 const PORT = process.env.PORT || 9000
 const io = new Server(`${process.env.PORT}`, {
     cors: {
-        origin: 'http://localhost:3000' || 'https://653361ecbfae0c37e94fc717--aquamarine-muffin-72bae9.netlify.app/'
+        origin: 'https://653361ecbfae0c37e94fc717--aquamarine-muffin-72bae9.netlify.app/'
     }
 })
 //to show active users below
